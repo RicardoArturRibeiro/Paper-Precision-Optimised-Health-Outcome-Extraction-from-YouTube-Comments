@@ -1,0 +1,172 @@
+RO,type,phrase,frequency
+RO1,bigram,skin tags,1445
+RO1,bigram,my skin,1054
+RO1,bigram,more energy,574
+RO1,bigram,brain fog,564
+RO1,bigram,my brain,446
+RO1,bigram,my gut,380
+RO1,bigram,joint pain,336
+RO1,bigram,not hungry,330
+RO1,bigram,leaky gut,316
+RO1,bigram,my energy,306
+RO1,bigram,my joints,289
+RO1,bigram,get hungry,265
+RO1,bigram,never hungry,247
+RO1,bigram,gut health,242
+RO1,bigram,feel hungry,236
+RO1,bigram,gut issues,234
+RO1,bigram,no energy,209
+RO1,bigram,your gut,206
+RO1,bigram,sugar cravings,202
+RO1,bigram,chronic fatigue,201
+RO1,bigram,chronic pain,198
+RO1,bigram,energy levels,194
+RO1,bigram,gut microbiota,188
+RO1,bigram,no pain,175
+RO1,bigram,my sleep,173
+RO1,bigram,my mood,166
+RO1,bigram,better sleep,154
+RO1,bigram,my inflammation,148
+RO1,bigram,skin tag,148
+RO1,bigram,your brain,142
+RO1,bigram,my pain,142
+RO1,bigram,so tired,139
+RO1,bigram,hungry all,138
+RO1,trigram,my skin tags,556
+RO1,trigram,pain in my,431
+RO1,trigram,skin tags are,197
+RO1,trigram,have more energy,157
+RO1,trigram,aches and pains,147
+RO1,trigram,and my skin,141
+RO1,trigram,more energy and,140
+RO1,trigram,full of energy,137
+RO1,trigram,the gut microbiota,137
+RO1,trigram,inflammation in my,130
+RO1,trigram,in my joints,128
+RO1,trigram,hungry all the,118
+RO1,trigram,skin tags disappeared,113
+RO1,trigram,my skin is,111
+RO1,trigram,lot of pain,108
+RO1,trigram,skin tags on,106
+RO1,trigram,am not hungry,95
+RO2,bigram,blood pressure,3238
+RO2,bigram,my blood,3049
+RO2,bigram,weight loss,2180
+RO2,bigram,blood sugar,2070
+RO2,bigram,lose weight,1590
+RO2,bigram,my weight,1544
+RO2,bigram,insulin resistance,1461
+RO2,bigram,my a1c,1221
+RO2,bigram,fatty liver,1098
+RO2,bigram,high cholesterol,840
+RO2,bigram,high blood,803
+RO2,bigram,no sugar,801
+RO2,bigram,blood glucose,722
+RO2,bigram,my cholesterol,667
+RO2,bigram,blood work,664
+RO2,bigram,my ldl,658
+RO2,bigram,i've lost,609
+RO2,bigram,lost weight,582
+RO2,bigram,losing weight,549
+RO2,bigram,my insulin,524
+RO2,bigram,my sugar,504
+RO2,bigram,ve lost,475
+RO2,bigram,insulin resistant,465
+RO2,bigram,sugar diet,432
+RO2,bigram,total cholesterol,408
+RO2,bigram,my triglycerides,397
+RO2,bigram,fasting insulin,392
+RO2,bigram,high ldl,380
+RO2,bigram,my liver,376
+RO2,bigram,my hdl,370
+RO2,bigram,weight gain,348
+RO2,bigram,gain weight,344
+RO2,bigram,kidney stones,343
+RO2,bigram,your blood,336
+RO2,bigram,cholesterol levels,332
+RO2,bigram,blood test,307
+RO2,bigram,lost my,283
+RO2,bigram,my glucose,281
+RO2,bigram,blood tests,269
+RO2,bigram,eat sugar,261
+RO2,bigram,added sugar,254
+RO2,bigram,insulin level,252
+RO2,bigram,lost over,249
+RO2,bigram,much sugar,249
+RO2,bigram,30 pounds,247
+RO2,bigram,without sugar,240
+RO2,bigram,pressure meds,240
+RO2,bigram,sugar levels,239
+RO2,bigram,glucose levels,237
+RO2,bigram,insulin levels,235
+RO2,trigram,my blood pressure,1238
+RO2,trigram,to lose weight,936
+RO2,trigram,my blood sugar,869
+RO2,trigram,high blood pressure,650
+RO2,trigram,and my blood,493
+RO2,trigram,my weight loss,368
+RO2,trigram,blood pressure is,315
+RO2,trigram,my a1c was,303
+RO2,trigram,sugar and carbs,289
+RO2,trigram,for weight loss,274
+RO2,trigram,weight loss and,271
+RO2,trigram,lose weight and,266
+RO2,trigram,the weight loss,244
+RO2,trigram,blood pressure meds,239
+RO2,trigram,my blood work,237
+RO2,trigram,my blood glucose,234
+RO2,trigram,blood pressure and,234
+RO2,trigram,my a1c is,229
+RO2,trigram,the sugar diet,220
+RO2,trigram,uric acid levels,216
+RO2,trigram,and my a1c,210
+RO2,trigram,on blood pressure,189
+RO2,trigram,your blood sugar,186
+RO2,trigram,weight loss was,182
+RO2,trigram,insulin resistance and,179
+RO2,trigram,blood pressure was,175
+RO2,trigram,blood pressure medication,170
+RO2,trigram,my fasting insulin,166
+RO2,trigram,carbs and sugar,165
+RO2,trigram,and my weight,163
+RO3,bigram,type diabetes,1860
+RO3,bigram,heart attack,1188
+RO3,bigram,fatty liver,1098
+RO3,bigram,diabetes diabetes,987
+RO3,bigram,heart disease,786
+RO3,bigram,bowel syndrome,754
+RO3,bigram,my heart,634
+RO3,bigram,diabetes diabetic,387
+RO3,bigram,heart attacks,326
+RO3,bigram,my diabetes,308
+RO3,bigram,breast cancer,252
+RO3,bigram,pre diabetic,209
+RO3,bigram,heart issues,206
+RO3,bigram,ovary syndrome,204
+RO3,bigram,heart rate,198
+RO3,bigram,type diabetic,170
+RO3,bigram,i'm diabetic,162
+RO3,bigram,my arthritis,161
+RO3,bigram,cancer cells,148
+RO3,bigram,colon cancer,140
+RO3,trigram,type diabetes diabetes,987
+RO3,trigram,irritable bowel syndrome,754
+RO3,trigram,type diabetes diabetic,387
+RO3,trigram,of heart disease,208
+RO3,trigram,polycystic ovary syndrome,204
+RO3,trigram,had heart attack,204
+RO3,trigram,bowel syndrome and,196
+RO3,trigram,with type diabetes,191
+RO3,trigram,of heart attack,175
+RO3,trigram,my fatty liver,123
+RO3,trigram,heart disease and,120
+RO3,trigram,am type diabetes,114
+RO3,trigram,of my heart,106
+RO3,trigram,have fatty liver,106
+RO3,trigram,my type diabetes,102
+RO3,trigram,type two diabetes,97
+RO3,trigram,of type diabetes,97
+RO3,trigram,you heart attack,96
+RO3,trigram,and type diabetes,91
+RO3,trigram,died of heart,91
+RO3,trigram,type diabetes diabetics,89

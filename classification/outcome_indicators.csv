@@ -1,0 +1,111 @@
+category,description,pattern
+quantified_change,Specific numerical improvements reported,lost\s+\d+\s*(pound|lb|kg|kilo)
+quantified_change,Specific numerical improvements reported,lost\s+(over|about|around|nearly)?\s*\d+\s*(pound|lb|kg|kilo)
+quantified_change,Specific numerical improvements reported,down\s+\d+\s*(pound|lb|kg|kilo)
+quantified_change,Specific numerical improvements reported,dropped\s+\d+\s*(pound|lb|kg|kilo)
+quantified_change,Specific numerical improvements reported,shed\s+\d+\s*(pound|lb|kg|kilo)
+quantified_change,Specific numerical improvements reported,\d+\s*(pound|lb|kg|kilo)\s*(lost|down|lighter)
+quantified_change,Specific numerical improvements reported,a1c\s*(went|dropped|down|fell|came down|is now|now)\s*(from\s+\d+\.?\d*\s*(to|down to))?\s*\d+\.?\d*
+quantified_change,Specific numerical improvements reported,a1c\s*(of|at|is|was)\s*\d+\.?\d*\s*(now|down from)
+quantified_change,Specific numerical improvements reported,my\s+a1c\s+(is|was|went to|dropped to|came down to)\s+\d+\.?\d*
+quantified_change,Specific numerical improvements reported,hba1c\s*(went|dropped|down|fell|is now)\s*\d+\.?\d*
+quantified_change,Specific numerical improvements reported,blood\s+pressure\s*(went|dropped|down|is now|now)\s*(to|from)?\s*\d+
+quantified_change,Specific numerical improvements reported,bp\s*(went|dropped|down|is now)\s*\d+
+quantified_change,Specific numerical improvements reported,\d+\s*/\s*\d+\s*(now|down from|blood pressure)
+quantified_change,Specific numerical improvements reported,blood\s+sugar\s*(went|dropped|down|is now)\s*(to|from)?\s*\d+
+quantified_change,Specific numerical improvements reported,glucose\s*(went|dropped|down|is now)\s*(to|from)?\s*\d+
+quantified_change,Specific numerical improvements reported,fasting\s+(blood\s+)?(sugar|glucose)\s*(of|at|is|was|down to)\s*\d+
+quantified_change,Specific numerical improvements reported,(cholesterol|triglycerides?|ldl|hdl)\s*(went|dropped|down|is now)\s*(to|from)?\s*\d+
+quantified_change,Specific numerical improvements reported,(cholesterol|triglycerides?)\s*(of|at)\s*\d+\s*(now|down)
+quantified_change,Specific numerical improvements reported,went\s+from\s+\d+\s*(to|down to)\s+\d+
+quantified_change,Specific numerical improvements reported,dropped\s+(from\s+)?\d+\s*(to|down to)\s+\d+
+reversal_remission,Disease reversal or remission reported,reversed\s+(my|the)?\s*(type\s*2\s*)?(diabetes|diabetic|prediabetes)
+reversal_remission,Disease reversal or remission reported,reversed\s+(my|the)?\s*(fatty\s+liver|nafld|nash)
+reversal_remission,Disease reversal or remission reported,reversed\s+(my|the)?\s*(insulin\s+resistance)
+reversal_remission,Disease reversal or remission reported,reversed\s+(my|the)?\s*(pcos|polycystic)
+reversal_remission,Disease reversal or remission reported,reversed\s+(my|the)?\s*(metabolic\s+syndrome)
+reversal_remission,Disease reversal or remission reported,(diabetes|fatty\s+liver|insulin\s+resistance)\s*(is|was)?\s*reversed
+reversal_remission,Disease reversal or remission reported,no\s+longer\s+(diabetic|prediabetic|pre-diabetic)
+reversal_remission,Disease reversal or remission reported,no\s+longer\s+(have|had)\s+(diabetes|fatty\s+liver|high\s+blood\s+pressure|hypertension)
+reversal_remission,Disease reversal or remission reported,no\s+longer\s+(insulin\s+resistant|pre\s*diabetic)
+reversal_remission,Disease reversal or remission reported,(i'm|i\s+am|am)\s+no\s+longer\s+(diabetic|prediabetic)
+reversal_remission,Disease reversal or remission reported,not\s+(diabetic|prediabetic)\s+anymore
+reversal_remission,Disease reversal or remission reported,(diabetes|condition)\s+(is\s+)?gone
+reversal_remission,Disease reversal or remission reported,(in|into)\s+remission
+reversal_remission,Disease reversal or remission reported,(diabetes|crohn|colitis|ibs|autoimmune)\s*(is|in)\s*remission
+reversal_remission,Disease reversal or remission reported,cured\s+(my|the)?\s*(diabetes|fatty\s+liver|gout|ibs)
+reversal_remission,Disease reversal or remission reported,healed\s+(my|the)?\s*(gut|liver|body)
+symptom_cessation,Symptoms stopped or disappeared,(pain|ache|aches)\s*(is|are|was|were)?\s*(gone|disappeared|vanished)
+symptom_cessation,Symptoms stopped or disappeared,(headache|migraine)s?\s*(is|are|was|were)?\s*(gone|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(brain\s+fog|brainfog)\s*(is|was)?\s*(gone|lifted|cleared|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(inflammation|swelling)\s*(is|was)?\s*(gone|down|reduced|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(bloating|gas)\s*(is|was)?\s*(gone|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(skin\s+tag)s?\s*(is|are|was|were)?\s*(gone|disappeared|fell\s+off)
+symptom_cessation,Symptoms stopped or disappeared,(acne|eczema|psoriasis|rash)\s*(is|was)?\s*(gone|cleared|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(fatigue|tiredness)\s*(is|was)?\s*(gone|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,(anxiety|depression)\s*(is|was)?\s*(gone|lifted|improved|better)
+symptom_cessation,Symptoms stopped or disappeared,(insomnia)\s*(is|was)?\s*(gone|cured)
+symptom_cessation,Symptoms stopped or disappeared,(cravings?)\s*(is|are|was|were)?\s*(gone|disappeared|stopped)
+symptom_cessation,Symptoms stopped or disappeared,(heartburn|reflux|gerd)\s*(is|was)?\s*(gone|disappeared|stopped)
+symptom_cessation,Symptoms stopped or disappeared,(joint\s+pain|back\s+pain|knee\s+pain)\s*(is|was)?\s*(gone|disappeared)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(pain|ache|aches|headache|migraine)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(brain\s+fog|brainfog|fog)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(inflammation|swelling)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(bloating|gas|stomach\s+issues)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(skin\s+tag|acne|rash)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(fatigue|tiredness|exhaustion)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(anxiety|depression|mood\s+swings)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(cravings?|hunger|snacking)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(heartburn|reflux|acid\s+reflux)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(joint\s+pain|back\s+pain|knee\s+pain)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(insomnia|sleep\s+problems)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(medications?|pills|drugs)
+symptom_cessation,Symptoms stopped or disappeared,no\s+more\s+(insulin|metformin|statins?)
+symptom_cessation,Symptoms stopped or disappeared,(pain|symptoms?|issues?)\s+(stopped|went\s+away|subsided)
+symptom_cessation,Symptoms stopped or disappeared,(headaches?|migraines?)\s+(stopped|went\s+away)
+symptom_cessation,Symptoms stopped or disappeared,(cravings?)\s+(stopped|went\s+away)
+symptom_cessation,Symptoms stopped or disappeared,(pain|symptom)\s*-?\s*free
+symptom_cessation,Symptoms stopped or disappeared,free\s+(of|from)\s+(pain|symptoms?|inflammation)
+symptom_cessation,Symptoms stopped or disappeared,got\s+rid\s+of\s+(my\s+)?(pain|symptoms?|skin\s+tags?|acne)
+medication_discontinuation,Stopped medications due to health improvement,off\s+(my\s+)?(metformin|insulin|statins?|lisinopril|medication|meds)
+medication_discontinuation,Stopped medications due to health improvement,off\s+(my\s+)?(blood\s+pressure|bp|diabetes|cholesterol)\s*(meds|medication|pills)
+medication_discontinuation,Stopped medications due to health improvement,off\s+(all\s+)?(my\s+)?medications?
+medication_discontinuation,Stopped medications due to health improvement,(i'm|i\s+am|am)\s+off\s+(metformin|insulin|statins?|medications?)
+medication_discontinuation,Stopped medications due to health improvement,stopped\s+taking\s+(metformin|insulin|statins?|medication|meds)
+medication_discontinuation,Stopped medications due to health improvement,stopped\s+(my\s+)?(metformin|insulin|statins?)
+medication_discontinuation,Stopped medications due to health improvement,no\s+longer\s+(take|taking|need|on)\s+(metformin|insulin|statins?|medication)
+medication_discontinuation,Stopped medications due to health improvement,don't\s+(need|take)\s+(metformin|insulin|statins?|medication)\s*(anymore|any\s+more)
+medication_discontinuation,Stopped medications due to health improvement,doctor\s+(took|taken)\s+me\s+off\s+(metformin|insulin|statins?|medication)
+medication_discontinuation,Stopped medications due to health improvement,doctor\s+(reduced|lowered|cut)\s+(my\s+)?(metformin|insulin|medication)
+medication_discontinuation,Stopped medications due to health improvement,(reduced|lowered|cut)\s+(my\s+)?(insulin|medication)\s+(dose|dosage|by)
+medication_discontinuation,Stopped medications due to health improvement,weaned\s+off\s+(metformin|insulin|statins?|medication)
+medication_discontinuation,Stopped medications due to health improvement,off\s+(cpap|blood\s+pressure\s+meds|bp\s+meds)
+medication_discontinuation,Stopped medications due to health improvement,don't\s+need\s+(cpap|my\s+cpap)\s*(anymore|any\s+more)
+medication_discontinuation,Stopped medications due to health improvement,no\s+longer\s+(use|need|on)\s+(cpap)
+explicit_improvement,Explicit statements of personal health improvement,my\s+(a1c|blood\s+sugar|glucose|blood\s+pressure|bp)\s*(has\s+)?(improved|normalized|is\s+normal)
+explicit_improvement,Explicit statements of personal health improvement,my\s+(cholesterol|triglycerides|ldl|hdl)\s*(has\s+)?(improved|normalized|is\s+normal)
+explicit_improvement,Explicit statements of personal health improvement,my\s+(energy|sleep|mood|digestion)\s*(has\s+)?(improved|is\s+better)
+explicit_improvement,Explicit statements of personal health improvement,my\s+(skin|joints|gut|liver)\s*(has\s+)?(improved|healed|is\s+better)
+explicit_improvement,Explicit statements of personal health improvement,my\s+(inflammation|pain)\s*(has\s+)?(improved|reduced|is\s+better)
+explicit_improvement,Explicit statements of personal health improvement,doctor\s*(was|is)?\s*(amazed|surprised|shocked|impressed)
+explicit_improvement,Explicit statements of personal health improvement,doctor\s*(couldn\'t|could\s+not)\s+believe
+explicit_improvement,Explicit statements of personal health improvement,doctor\s+said\s+(my|i)\s*(numbers?|results?|labs?)\s*(are|were|look)\s*(great|amazing|normal)
+explicit_improvement,Explicit statements of personal health improvement,(best|lowest|healthiest)\s+(a1c|blood\s+sugar|blood\s+pressure|cholesterol|weight)\s*(in\s+years|ever|of\s+my\s+life)
+explicit_improvement,Explicit statements of personal health improvement,(best|most)\s+(energy|sleep)\s*(in\s+years|ever|i\'ve\s+had)
+explicit_improvement,Explicit statements of personal health improvement,feel\s+(better|healthier|amazing|great)\s+(than\s+ever|than\s+i\s+have\s+in\s+years|in\s+my\s+life)
+explicit_improvement,Explicit statements of personal health improvement,never\s+felt\s+(better|healthier|this\s+good)
+explicit_improvement,Explicit statements of personal health improvement,feel\s+like\s+a\s+new\s+(person|man|woman)
+explicit_improvement,Explicit statements of personal health improvement,feel\s+\d+\s+years\s+younger
+explicit_improvement,Explicit statements of personal health improvement,(this|it|keto|carnivore|fasting)\s+(changed|saved)\s+my\s+life
+explicit_improvement,Explicit statements of personal health improvement,(life|game)\s*-?\s*changer
+explicit_improvement,Explicit statements of personal health improvement,(completely|totally|fully)\s+(resolved|healed|gone|cured)
+explicit_improvement,Explicit statements of personal health improvement,(100|hundred)\s*%?\s*(better|healed|resolved)
+temporal_improvement,Improvement stated with temporal context,"since\s+(starting|going|doing)\s+(keto|carnivore|low\s+carb|fasting).{0,50}(lost|improved|better|gone|no\s+more)"
+temporal_improvement,Improvement stated with temporal context,"since\s+(i\s+)?started\s+(keto|carnivore|low\s+carb|fasting).{0,50}(lost|improved|better|gone|no\s+more)"
+temporal_improvement,Improvement stated with temporal context,"since\s+(going|being)\s+(on\s+)?(keto|carnivore|low\s+carb).{0,50}(lost|improved|better|gone)"
+temporal_improvement,Improvement stated with temporal context,"after\s+\d+\s*(week|month|day)s?\s*.{0,30}(lost|dropped|improved|reversed|gone|no\s+more)"
+temporal_improvement,Improvement stated with temporal context,"(after|within)\s+\d+\s*(week|month|day)s?\s*(of\s+)?(keto|carnivore|fasting).{0,30}(lost|dropped|better)"
+temporal_improvement,Improvement stated with temporal context,"\d+\s*(week|month|day)s?\s*(in|into|later).{0,30}(lost|dropped|improved|gone|no\s+more)"
+temporal_improvement,Improvement stated with temporal context,"\d+\s*(week|month)s?\s+on\s+(keto|carnivore|this).{0,30}(lost|down|improved|better)"
+temporal_improvement,Improvement stated with temporal context,(now|today)\s+(my\s+)?(a1c|blood\s+sugar|bp|weight)\s+(is|at)\s+\d+
+temporal_improvement,Improvement stated with temporal context,"now\s+(i\s+)?(have|feel|am).{0,20}(more\s+energy|no\s+pain|no\s+more)"

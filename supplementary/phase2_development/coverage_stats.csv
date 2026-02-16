@@ -1,0 +1,36 @@
+ro_id,ro_name,aspect_id,aspect_name,match_count,match_percentage,num_keywords
+RO1,Subjective Well-Being,RO1.1,Cognitive Function,4371,2.0847940246397756,20
+RO1,Subjective Well-Being,RO1.2,Energy & Vitality,5547,2.6456994863136205,19
+RO1,Subjective Well-Being,RO1.3,Psychological Well-Being,6416,3.06017809702329,22
+RO1,Subjective Well-Being,RO1.4,Sleep Quality,11343,5.410162118848999,19
+RO1,Subjective Well-Being,RO1.5,Appetite & Satiety,10238,4.883120847463286,19
+RO1,Subjective Well-Being,RO1.6,Pain & Inflammation,9239,4.406637381296473,21
+RO1,Subjective Well-Being,RO1.7,Digestive Health,7732,3.687858018420212,22
+RO1,Subjective Well-Being,RO1.8,Skin Health,5253,2.505473120895159,21
+RO1,Subjective Well-Being,RO1.9,Hormonal & Menstrual Health,3376,1.610218400179337,18
+RO2,Tool-Mediated Validation,RO2.1,Anthropometric Changes,19644,9.369410620000858,28
+RO2,Tool-Mediated Validation,RO2.2,Glycemic Control,7595,3.622514439976915,20
+RO2,Tool-Mediated Validation,RO2.3,Blood Pressure,2542,1.2124334044004368,12
+RO2,Tool-Mediated Validation,RO2.4,Lipid Profile,6441,3.072102107688125,21
+RO2,Tool-Mediated Validation,RO2.5,Inflammatory Markers,302,0.14404204883120847,10
+RO2,Tool-Mediated Validation,RO2.6,Liver Function,46166,22.019355054111163,12
+RO2,Tool-Mediated Validation,RO2.7,Kidney Function,1305,0.6224333567043943,10
+RO2,Tool-Mediated Validation,RO2.8,Hormonal Markers,856,0.4082781251639552,14
+RO3,Disease Specificity,RO3.1,Type 2 Diabetes,6283,2.9967423602863668,15
+RO3,Disease Specificity,RO3.2,Fatty Liver Disease,1032,0.49222316024439455,9
+RO3,Disease Specificity,RO3.3,Cardiovascular Disease,5482,2.6146970585850493,17
+RO3,Disease Specificity,RO3.4,Hypertension,351,0.16741310973428536,3
+RO3,Disease Specificity,RO3.5,PCOS,159,0.07583670782835147,6
+RO3,Disease Specificity,RO3.6,Neurodegenerative Disease,1010,0.4817300308593396,9
+RO3,Disease Specificity,RO3.7,Chronic Kidney Disease,347,0.16550526802791174,11
+RO3,Disease Specificity,RO3.8,Gout,1736,0.8280033005661521,6
+RO3,Disease Specificity,RO3.9,Cancer,2635,1.2567907240736236,17
+RO3,Disease Specificity,RO3.10,Osteoporosis,188,0.08966856019956024,8
+RO3,Disease Specificity,RO3.11,Stroke,3838,1.8305741172654906,9
+RO3,Disease Specificity,RO3.12,ADHD,7824,3.7317383776668054,8
+RO3,Disease Specificity,RO3.13,Thyroid Disease,885,0.4221099775351639,13
+RO3,Disease Specificity,RO3.14,Inflammatory Bowel Disease,1438,0.6858690934413172,12
+RO3,Disease Specificity,RO3.15,Autoimmune Disease,59288,28.27802977186983,13
+RO3,Disease Specificity,RO3.16,Fibromyalgia & Neuropathy,751,0.3581972803716476,9
+RO3,Disease Specificity,RO3.17,Arthritis,917,0.4373727111861529,5
+RO3,Disease Specificity,RO3.18,Gallbladder Disease,586,0.27949880998373566,7
