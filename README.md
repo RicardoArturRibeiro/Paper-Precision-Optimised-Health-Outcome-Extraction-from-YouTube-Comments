@@ -8,7 +8,7 @@
 
 This repository accompanies the paper:
 
-> Ribeiro, R. & Zutshi, A. (2026). A Precision-Optimized Framework for Extracting Self-Reported Health Outcomes from User-Generated Content: A Large-Scale Analysis of YouTube Comments. *[Journal Name]*.
+> Ribeiro, R. & Zutshi, A. (2026). A Precision-Optimized Framework for Extracting Self-Reported Health Outcomes from User-Generated Content: A Large-Scale Analysis of YouTube Comments. *Journal of Medical Internet Research (JMIR)*.
 
 The framework analyses YouTube comments on metabolic health content (Therapeutic Carbohydrate Restriction) and identifies self-reported positive health outcomes with **97.6% precision** (95% CI: 95.7%–98.6%). It classifies outcomes across 35 health aspects organised under three research objectives: Subjective Well-Being (RO1), Tool-Mediated Validation (RO2), and Disease Specificity (RO3).
 
@@ -74,6 +74,13 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 │   ├── fig4_channel_comparison.png
 │   ├── fig5_outcome_categories.png
 │   └── fig6_summary_dashboard.png
+│
+├── absa/                              # Aspect-Based Sentiment Analysis (Phase 4)
+│   ├── README.md                      # ABSA documentation
+│   ├── absa_colab.py                  # Google Colab ABSA pipeline script
+│   ├── absa_sample.csv               # Stratified sample input
+│   ├── absa_gpt_4o.jsonl             # GPT-4o ABSA output
+│   └── absa_gpt_4_1.jsonl            # GPT-4.1 ABSA output
 │
 ├── data_collection/                   # Data collection scripts
 │   └── README.md                      # Instructions for corpus reconstruction
@@ -160,6 +167,10 @@ The three-stage pipeline maximises precision through conservative, layered filte
 2. **Stage 2 — Outcome Indicator Detection:** 110 regex patterns across 6 categories (quantified change, symptom cessation, reversal/remission, medication discontinuation, explicit improvement, temporal improvement)
 3. **Stage 3 — Exclusion Filtering:** 45 regex patterns across 6 categories (questions, negation, third-party references, future intent, general statements, engagement only)
 
+## Aspect-Based Sentiment Analysis (ABSA)
+
+A dual-model ABSA approach using GPT-4o and GPT-4.1 was applied to a stratified sample of classified comments to extract fine-grained aspect-sentiment pairs. This provides independent validation of the ontology-driven classification and enables granular analysis of sentiment polarity per health aspect. See `absa/README.md` for details.
+
 ## Validation
 
 | Assessment | Method | Result |
@@ -180,9 +191,9 @@ If you use this framework, ontology, or dataset in your research, please cite:
 @article{ribeiro2026precision,
   title={A Precision-Optimized Framework for Extracting Self-Reported Health Outcomes from User-Generated Content: A Large-Scale Analysis of YouTube Comments},
   author={Ribeiro, Ricardo and Zutshi, Aneesh},
-  journal={[Journal Name]},
+  journal={Journal of Medical Internet Research},
   year={2026},
-  doi={[DOI]}
+  doi={[pending]}
 }
 ```
 
@@ -194,4 +205,5 @@ The YouTube comment data is subject to the [YouTube API Terms of Service](https:
 
 ## Contact
 
-- **Ricardo Ribeiro** — UNIDEMI, Department of Mechanical and Industrial Engineering, NOVA School of Science and Technology, NOVA University Lisbon, Caparica 2829-516, Portugal
+- **Ricardo Ribeiro** — UNIDEMI, Department of Mechanical and Industrial Engineering, NOVA School of Science and Technology, Universidade NOVA de Lisboa, Caparica 2829-516, Portugal — rasi.ribeiro@campus.fct.unl.pt
+- **Aneesh Zutshi** — UNIDEMI, Department of Mechanical and Industrial Engineering, NOVA School of Science and Technology, Universidade NOVA de Lisboa, Caparica 2829-516, Portugal; LASI, 4800-058 Guimarães, Portugal — aneesh@fct.unl.pt

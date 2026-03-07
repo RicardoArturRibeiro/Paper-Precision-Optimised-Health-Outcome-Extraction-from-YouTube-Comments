@@ -11,8 +11,8 @@ authors:
     affiliation: "UNIDEMI, NOVA School of Science and Technology, NOVA University Lisbon"
 repository-code: "https://github.com/RicardoArturRibeiro/Paper-Precision-Optimised-Health-Outcome-Extraction-from-YouTube-Comments"
 license: MIT
-version: "1.0.0"
-date-released: "2026-02-16"
+version: "2.0.0"
+date-released: "2026-03-07"
 keywords:
   - natural-language-processing
   - health-informatics
@@ -24,6 +24,7 @@ keywords:
   - self-reported-outcomes
   - youtube
   - metabolic-health
+  - aspect-based-sentiment-analysis
 preferred-citation:
   type: article
   authors:
@@ -33,5 +34,5 @@ preferred-citation:
       given-names: "Aneesh"
   title: "A Precision-Optimized Framework for Extracting Self-Reported Health Outcomes from User-Generated Content: A Large-Scale Analysis of YouTube Comments"
   year: 2026
-  journal: "[Journal Name]"
-  doi: "[DOI]"
+  journal: "Journal of Medical Internet Research"
+  doi: "[pending]"
