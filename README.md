@@ -30,27 +30,36 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 ├── CITATION.cff                       # Citation metadata
 ├── LICENSE                            # MIT License
 │
+│   ── Phase 1: Exploratory Data Analysis ──────────────────────
+│
+├── data_collection/                   # Data collection scripts
+│   └── README.md                      # Instructions for corpus reconstruction
+│
+│   ── Phase 2: Ontology Development ───────────────────────────
+│
 ├── ontology/                          # Health outcome ontology (35 aspects)
 │   ├── final_ontology.csv             # Complete ontology with keywords & exclusions
 │   └── ONTOLOGY_CODEBOOK.md           # Ontology documentation & aspect definitions
 │
+│   ── Phase 3: Classification & Validation ────────────────────
+│
 ├── classification/                    # Classification pipeline
 │   ├── outcome_indicators.csv         # 110 positive outcome regex patterns
 │   ├── exclusion_patterns.csv         # 45 exclusion filter regex patterns
-│   └── scripts/                       # Python classification scripts
-│       ├── phase1_eda.py              # Phase 1: Exploratory Data Analysis
-│       ├── phase1_eda_v2.py           # Phase 1: EDA (extended version)
-│       ├── phase2_corpus_exploration.py    # Phase 2: Corpus exploration
-│       ├── phase2_lda_topic_modelling.py  # Phase 2: LDA topic modelling
-│       ├── phase2_ngram_extraction.py     # Phase 2: N-gram extraction
-│       ├── phase2_ontology_testing.py     # Phase 2: Ontology testing
-│       ├── phase2_ontology_refinement.py  # Phase 2: Ontology refinement
-│       ├── phase2_final_documentation.py  # Phase 2: Final documentation
-│       ├── phase3_outcome_indicators.py   # Phase 3: Outcome indicator development
-│       ├── phase3_full_classification.py  # Phase 3: Full corpus classification
-│       ├── phase3_validation_sample.py    # Phase 3: Validation sample generation
-│       ├── phase3_statistical_analysis.py # Phase 3: Statistical analysis & figures
-│       └── phase3_ml_comparison.py        # Phase 3: ML baseline comparison
+│   └── scripts/                       # Python scripts (Phases 1–3)
+│       ├── phase1_eda.py              # EDA
+│       ├── phase1_eda_v2.py           # EDA (extended)
+│       ├── phase2_corpus_exploration.py    # Corpus exploration
+│       ├── phase2_lda_topic_modelling.py  # LDA topic modelling
+│       ├── phase2_ngram_extraction.py     # N-gram extraction
+│       ├── phase2_ontology_testing.py     # Ontology testing
+│       ├── phase2_ontology_refinement.py  # Ontology refinement
+│       ├── phase2_final_documentation.py  # Final documentation
+│       ├── phase3_outcome_indicators.py   # Outcome indicator development
+│       ├── phase3_full_classification.py  # Full corpus classification
+│       ├── phase3_validation_sample.py    # Validation sample generation
+│       ├── phase3_statistical_analysis.py # Statistical analysis & figures
+│       └── phase3_ml_comparison.py        # ML baseline comparison
 │
 ├── validation/                        # Validation protocol & results
 │   ├── VALIDATION_PROTOCOL.md         # Detailed validation procedures
@@ -67,6 +76,17 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 │   ├── positive_outcomes.csv          # Full classified corpus (6,671 outcomes)
 │   └── sample_classifications.csv     # 5,000-comment sample with all fields
 │
+│   ── Phase 4: Aspect-Based Sentiment Analysis (ABSA) ────────
+│
+├── absa/                              # Dual-model ABSA validation
+│   ├── README.md                      # ABSA documentation
+│   ├── absa_colab.py                  # Google Colab ABSA pipeline script
+│   ├── absa_sample.csv               # Stratified sample input
+│   ├── absa_gpt_4o.jsonl             # GPT-4o ABSA output
+│   └── absa_gpt_4_1.jsonl            # GPT-4.1 ABSA output
+│
+│   ── Supporting Materials ────────────────────────────────────
+│
 ├── figures/                           # Paper figures (high-resolution)
 │   ├── fig1_framework_architecture.png
 │   ├── fig2_ro_overview.png
@@ -75,17 +95,7 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 │   ├── fig5_outcome_categories.png
 │   └── fig6_summary_dashboard.png
 │
-├── absa/                              # Aspect-Based Sentiment Analysis (Phase 4)
-│   ├── README.md                      # ABSA documentation
-│   ├── absa_colab.py                  # Google Colab ABSA pipeline script
-│   ├── absa_sample.csv               # Stratified sample input
-│   ├── absa_gpt_4o.jsonl             # GPT-4o ABSA output
-│   └── absa_gpt_4_1.jsonl            # GPT-4.1 ABSA output
-│
-├── data_collection/                   # Data collection scripts
-│   └── README.md                      # Instructions for corpus reconstruction
-│
-└── supplementary/                     # Additional materials
+└── supplementary/                     # Additional outputs by phase
     ├── phase1_eda/                    # Phase 1 EDA outputs
     │   ├── lda_topics.csv
     │   ├── topic_distribution.csv
