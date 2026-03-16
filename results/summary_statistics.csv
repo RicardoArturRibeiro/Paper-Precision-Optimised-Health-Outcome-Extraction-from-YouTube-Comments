@@ -1,23 +1,14 @@
 Metric,Value
-Total Corpus Size,209661
-Classified Positive Outcomes,6671
-Raw Prevalence,3.18%
-Raw Prevalence 95% CI,0.01%-0.11%
-Validation Precision,97.6%
-Validation Precision 95% CI,95.7%-98.6%
-Estimated True Positives,6510
-Estimated True Positives 95% CI,6384-6577
-Adjusted Prevalence,3.11%
-RO1 Count (Subjective Well-Being),3456
-RO1 Percentage of Positives,51.8%
-RO2 Count (Tool-Mediated Validation),5350
-RO2 Percentage of Positives,80.2%
-RO3 Count (Disease Specificity),2032
-RO3 Percentage of Positives,30.5%
-Multi-RO Comments,3355 (50.3%)
-Chi-Square Statistic (Channel),3508.86
-Chi-Square p-value,0.00e+00
-Cramer's V Effect Size,0.129 (small)
-Highest Channel Rate,KenDBerryMD (8.06%)
-Lowest Channel Rate,Mark Hyman (1.14%)
-Channel Odds Ratio (High/Low),7.61
+Total Corpus Size,43111
+Classified Positive Outcomes,1790
+Raw Prevalence,4.15%
+Unique Channels,11
+Videos Analysed,110
+Precision,97.6%
+Recall,20.7%
+Estimated True Positives,1747
+Chi-Square,927.51
+Cramers V,0.147
+Max Channel Rate,10.40% (KenDBerryMD)
+Min Channel Rate,1.32% (Shawn Baker MD)
+Odds Ratio (max/min),8.68

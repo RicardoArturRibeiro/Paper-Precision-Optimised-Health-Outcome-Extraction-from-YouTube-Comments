@@ -4,6 +4,8 @@
 
 > **A computational framework for extracting self-reported positive health outcomes from user-generated YouTube comments using ontology-driven rule-based classification.**
 
+> **Correction Notice (March 2026):** The corpus was corrected from 209,661 records to 43,111 unique comments after discovering that the YouTube Data API v3 returned duplicate records during pagination. All result files, figures, and statistics have been updated. Validation metrics (precision 97.6%) remain unchanged. See [`REVISION_CHANGELOG.md`](REVISION_CHANGELOG.md) for full details.
+
 ## Overview
 
 This repository accompanies the paper:
@@ -17,11 +19,11 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 | Metric | Value | 95% CI |
 |--------|-------|--------|
 | Precision | 97.6% | 95.7% – 98.6% |
-| Recall | 16.5% | 11.6% – 23.6% |
-| F1-Score | 28.3% | — |
-| Corpus Size | 209,661 comments | — |
-| Classified Positives | 6,671 | — |
-| Estimated True Positives | 6,510 | 6,384 – 6,577 |
+| Recall | 20.7% | 14.8% – 29.0% |
+| F1-Score | 33.8% | — |
+| Corpus Size | 43,111 unique comments | — |
+| Classified Positives | 1,790 | — |
+| Estimated True Positives | 1,747 | 1,713 – 1,764 |
 
 ## Repository Structure
 
@@ -73,7 +75,7 @@ The framework analyses YouTube comments on metabolic health content (Therapeutic
 │   ├── aspect_statistics.csv          # Per-aspect classification statistics
 │   ├── channel_analysis.csv           # Per-channel analysis with CIs
 │   ├── category_statistics.csv        # Outcome category distribution
-│   ├── positive_outcomes.csv          # Full classified corpus (6,671 outcomes)
+│   ├── positive_outcomes.csv          # Full classified corpus (1,790 outcomes)
 │   └── sample_classifications.csv     # 5,000-comment sample with all fields
 │
 │   ── Phase 4: Aspect-Based Sentiment Analysis (ABSA) ────────
@@ -154,7 +156,7 @@ python classification/scripts/phase3_statistical_analysis.py
 The raw YouTube comment corpus **cannot be redistributed** in accordance with the YouTube API Terms of Service (Section III.E.4). However:
 
 - Data collection scripts are provided in `data_collection/` for corpus reconstruction using the YouTube Data API v3
-- The classified outputs (6,671 positive outcomes) are provided in `results/positive_outcomes.csv`
+- The classified outputs (1,790 positive outcomes) are provided in `results/positive_outcomes.csv`
 - Validation codings are provided in de-identified form in `validation/`
 
 ## Ontology
@@ -186,7 +188,7 @@ A dual-model ABSA approach using GPT-4o and GPT-4.1 was applied to a stratified 
 | Assessment | Method | Result |
 |-----------|--------|--------|
 | Precision | Manual coding (n=500) | 97.6% (95% CI: 95.7%–98.6%) |
-| Recall | Negative sampling (n=105) | 16.5% (95% CI: 11.6%–23.6%) |
+| Recall | Negative sampling (n=105) | 20.7% (95% CI: 14.8%–29.0%) |
 | IRR: Human vs. GPT-4o | PABAK | 0.673 (Substantial) |
 | IRR: Human vs. GPT-4.1 | PABAK | 0.741 (Substantial) |
 | IRR: GPT-4o vs. GPT-4.1 | Cohen's κ | 0.771 (Substantial) |

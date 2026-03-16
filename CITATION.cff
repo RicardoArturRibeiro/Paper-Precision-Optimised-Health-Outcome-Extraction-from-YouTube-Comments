@@ -11,8 +11,8 @@ authors:
     affiliation: "UNIDEMI, NOVA School of Science and Technology, NOVA University Lisbon"
 repository-code: "https://github.com/RicardoArturRibeiro/Paper-Precision-Optimised-Health-Outcome-Extraction-from-YouTube-Comments"
 license: MIT
-version: "2.0.0"
-date-released: "2026-03-07"
+version: "2.1.0"
+date-released: "2026-03-16"
 keywords:
   - natural-language-processing
   - health-informatics
