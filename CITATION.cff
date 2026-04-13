@@ -1,38 +1,26 @@
 cff-version: 1.2.0
-message: "If you use this software or dataset, please cite it as below."
-title: "Precision-Optimized Health Outcome Extraction from YouTube Comments"
-type: software
+message: "If you use this framework, please cite the following paper."
+title: "Self-Reported Health Outcomes in Metabolic Health YouTube Comments: Rule-Based NLP Framework Development and Validation Study"
 authors:
   - family-names: "Ribeiro"
     given-names: "Ricardo"
-    affiliation: "UNIDEMI, NOVA School of Science and Technology, NOVA University Lisbon"
+    orcid: "https://orcid.org/0000-0002-0000-0000"
   - family-names: "Zutshi"
     given-names: "Aneesh"
-    affiliation: "UNIDEMI, NOVA School of Science and Technology, NOVA University Lisbon"
+type: article
+journal: "Journal of Medical Internet Research"
+year: 2026
+status: "under-review"
 repository-code: "https://github.com/RicardoArturRibeiro/Paper-Precision-Optimised-Health-Outcome-Extraction-from-YouTube-Comments"
 license: MIT
-version: "2.1.0"
-date-released: "2026-03-16"
 keywords:
-  - natural-language-processing
-  - health-informatics
-  - user-generated-content
-  - ontology-engineering
-  - text-classification
-  - precision-optimized-extraction
-  - social-media-analytics
-  - self-reported-outcomes
-  - youtube
-  - metabolic-health
-  - aspect-based-sentiment-analysis
-preferred-citation:
-  type: article
-  authors:
-    - family-names: "Ribeiro"
-      given-names: "Ricardo"
-    - family-names: "Zutshi"
-      given-names: "Aneesh"
-  title: "A Precision-Optimized Framework for Extracting Self-Reported Health Outcomes from User-Generated Content: A Large-Scale Analysis of YouTube Comments"
-  year: 2026
-  journal: "Journal of Medical Internet Research"
-  doi: "[pending]"
+  - "Healthcasting"
+  - "Therapeutic Carbohydrate Restriction"
+  - "Natural Language Processing"
+  - "YouTube"
+  - "Health Outcomes"
+  - "Rule-Based Classification"
+  - "Precision-Optimised Extraction"
+  - "User-Generated Content"
+  - "Metabolic Health"
+  - "Ontology Engineering"

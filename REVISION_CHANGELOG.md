@@ -1,145 +1,100 @@
-# Revision Changelog — JMIR ms#94855
+# Revision Changelog: JMIR ms#94855
 
-**Document:** Ribeiro_JMIR_2026_REVISED.docx
-**Date:** 13 March 2026
-**Author:** Ricardo Ribeiro (with AI-assisted analysis)
-**Reason:** Corpus deduplication following discovery of YouTube Data API v3 pagination duplicates
+## Revision 2 (April 2026) — Response to Peer Review
+
+This revision addresses all comments from the editor and two external peer reviewers (Reviewer S and Reviewer BG). The changes are substantial and span methodology, validation, results, and discussion.
+
+### Major Additions
+
+#### 1. Expanded Recall Estimation (Reviewer S, Point 3)
+- **Previous:** n=105 negative sample, recall estimate 20.7%
+- **Revised:** n=510 stratified sample (short <50 words: n=300; medium 50–150: n=150; long >150: n=60) with proportional allocation across 11 channels
+- **New result:** Recall 56.2% (95% CI 43.4%–67.9%), 27 false negatives identified
+- Channel-level recall variation now reported (χ²(10)=28.76, P=.001)
+- Comment-length variation now reported (χ²(2)=19.36, P<.001)
+
+#### 2. External Validation on Held-Out Channels (Reviewer S, Point 4)
+- 12,653 comments from 5 independent channels (Georgia Ede MD, Robert Kiltz MD, Sten Ekberg DC, Chris Palmer MD, Ted Naiman MD)
+- Zero overlap with development corpus; channels selected by independent co-author
+- Precision: 93.4% (227/243; 95% CI 89.6%–95.9%)
+- Recall: 50.1% (95% CI 31.4%–59.1%)
+- Reported in new Multimedia Appendix E
+
+#### 3. Transformer Baseline Comparison (Reviewer S, Point 7)
+- BERT-base-uncased and RoBERTa-base fine-tuned on combined validation dataset (n=836; 347 positive, 489 negative)
+- Stratified five-fold cross-validation
+- BERT: precision 87.0%, recall 93.4%; RoBERTa: precision 88.2%, recall 95.7%
+- Confirms rule-based precision advantage for high-confidence corpus generation
+- Reported in new Multimedia Appendix F
+
+#### 4. LLM Bias Audit (Reviewer S, Point 2)
+- Full confusion matrices between each LLM and human coder
+- Systematic directional bias characterised (both LLMs stricter than human coder)
+- McNemar tests: P<.001 (GPT-4o) and P=.048 (GPT-4.1)
+- Reported in new Multimedia Appendix H
+
+### Metric Changes (Revision 1 → Revision 2)
+
+| Metric | Revision 1 | Revision 2 | Note |
+|--------|-----------|-----------|------|
+| Recall sample size | n=105 | n=510 | Expanded per reviewer request |
+| Recall estimate | 20.7% | 56.2% | Stratified weighted estimation |
+| Recall 95% CI | 11.6%–23.6% | 43.4%–67.9% | Tighter with larger sample |
+| Inter-rater primary metric | PABAK | Cohen κ + % agreement | PABAK removed from primary table |
+| External validation | Not conducted | 93.4% precision (n=12,653) | New validation study |
+| Transformer baseline | Not conducted | BERT 87.0%P / RoBERTa 88.2%P | New comparison |
+| References | 1–46 | 1–49 | Three reviewer-cited papers added |
+
+### Unchanged from Revision 1
+- Classification precision: 97.6% (488/500)
+- Corpus size: 43,111 unique comments
+- Positive outcomes classified: 1,790
+- 35-aspect ontology framework
+- Rule-based classification methodology
+- ABSA results (4.6:1 positive-to-negative ratio)
+
+### Discussion and Framing Changes (Reviewer S, Points 5–6)
+- Removed "rival or exceed clinical trials" and all clinical-level claims
+- Removed advocacy language ("democratising access...")
+- Channel-level interpretations explicitly labelled as "interpretive hypotheses"
+- All disease-specific counts now presented as "self-reported" with caveats
+
+### Additional Changes
+- **Title:** Revised to JMIR format ("Issue in Condition: Method/Study Design")
+- **Abstract:** Expanded to full 450 words with all required elements
+- **Ethical Considerations:** Dedicated subsection addressing all 5 JMIR-required points
+- **Funding:** Separate section distinct from Acknowledgements
+- **AI Disclosure:** Dedicated "Use of AI/LLM" section
+- **Table/Figure captions:** All expanded to be self-contained
+- **Figure 1:** New framework architecture diagram (300 DPI PNG)
+- **Confidence intervals:** Wilson score 95% CIs for all point estimates
+- **Statistics format:** P-values uppercase, CI format per JMIR guidelines
+- **Limitations:** New subsections on viral content bias, reply thread exclusion, construct validity
+- **Healthcasting term:** Justified with explicit rationale for compound term adoption
+- **References updated:** Added [47] Cao et al. 2025 (PROBAST bias framework), [48] Xu et al. 2026 (LLM annotation shifts), [49] Ding et al. 2025 (ML/DL trade-offs)
+- **Video metadata:** Durations reported (range 19s–115.8min, mean 23.3min); short-form videos (n=13) noted
+- **Content creator credentials:** Table 1 expanded with degree-granting institutions
+- **CREMLS checklist:** Completed in Multimedia Appendix G
 
 ---
 
-## Summary of Change
+## Revision 1 (March 2026) — Corpus Deduplication Correction
 
-The YouTube Data API v3 returned duplicate comment records during paginated retrieval with `order='relevance'`. After deduplication by comment text, the corpus was corrected from 209,661 records to **43,111 unique comments** (inflation factor: 4.86×).
+### Core Issue
+The study discovered that YouTube Data API v3's pagination with relevance-based ordering produced duplicate records. After deduplication, the corpus shrank from 209,661 to **43,111 unique comments** (a 4.86× inflation factor).
 
----
+### Key Metric Changes
 
-## Corrected Metrics Overview
-
-| Metric | Original | Corrected | Change |
+| Metric | Original | Corrected | Impact |
 |--------|----------|-----------|--------|
-| Corpus size | 209,661 | 43,111 | −166,550 |
-| Positive outcomes | 6,671 | 1,790 | −4,881 |
+| Corpus size | 209,661 | 43,111 | −79.4% |
+| Positive outcomes | 6,671 | 1,790 | −73.2% |
 | Prevalence | 3.18% | 4.15% | +0.97pp |
-| Unique authors | 37,742 | 37,458 | −284 |
-| Est. true positives | 6,510 | 1,747 | −4,763 |
-| Est. false negatives | 32,865 | 6,690 | −26,175 |
-| Recall | 16.5% | 20.7% | +4.2pp |
-| Recall 95% CI | 11.6%–23.6% | 14.8%–29.0% | improved |
-| Chi-square | 3,509 | 927.51 | recalculated |
-| Cramér's V | 0.129 | 0.147 | recalculated |
-| Highest rate | 8.06% (KenDBerryMD) | 10.40% (KenDBerryMD) | +2.34pp |
-| Lowest rate | 1.14% (Mark Hyman) | 1.32% (Shawn Baker MD) | channel changed |
-| Odds ratio (max/min) | 7.61 | 8.68 | +1.07 |
-| Adjusted prevalence | 3.11% | 4.05% | +0.94pp |
-| Precision | 97.6% | 97.6% | **UNCHANGED** |
-| Ontology (35 aspects) | — | — | **UNCHANGED** |
-| Framework methodology | — | — | **UNCHANGED** |
+| Recall estimate | 16.5% | 20.7% | +4.2pp |
+| Chi-square | 3,509 | 927.51 | Recalculated |
 
----
-
-## Section-by-Section Changes
-
-### Abstract
-
-1. **Methods:** "209,661 comments" → "43,111 unique comments"; "37,742 unique authors" → "37,458 unique authors"
-2. **Results:** "6,671 positive health outcome reports (3.18% prevalence)" → "1,790 positive health outcome reports (4.15% prevalence)"; recall "16.5% (95% CI: 11.6%–23.6%)" → "20.7% (95% CI: 14.8%–29.0%)"; "χ²=3,509" → "χ²=927.51"; rates "1.14% to 8.06% (OR=7.61)" → "1.32% to 10.40% (OR=8.68)"
-3. **Conclusions:** "6,510 estimated true positives" → "1,747 estimated true positives"
-
-### Introduction — Contributions
-
-4. "6,510 estimated true positive health outcome reports extracted from 209,661 comments across 37,742 unique commenters" → "1,747 ... from 43,111 unique comments across 37,458 unique commenters"
-
-### Background — Table 1 Footnote
-
-5. "comparable to this study's 3.18%" → "comparable to this study's 4.15%"
-
-### Methods — Data Collection
-
-6. **NEW TEXT ADDED:** "yielding a raw corpus of 209,661 records from 110 videos. After removing duplicate records caused by API pagination (the YouTube Data API v3 returns non-unique results when paginating beyond available comments with relevance-based ordering), 43,111 unique comments were retained"
-
-### Methods — Table 2
-
-7. **All 11 channel rows updated:** comment counts, positive outcome counts, and rates corrected to deduplicated values
-8. **Channel ranking changes:** Jason Fung moves from #4 to #2; Shawn Baker MD becomes lowest rate (was Mark Hyman)
-
-### Methods — Phase 2 Ontology
-
-9. "N = 209,661" → "N = 43,111"; "3.18% of the full corpus (n = 6,671)" → "4.15% of the full corpus (n = 1,790)"
-
-### Results — Classification
-
-10. "6,671 comments (3.18% of the corpus)" → "1,790 comments (4.15% of the corpus)"
-
-### Results — Recall Estimation
-
-11. "non-positive pool of 202,990 comments" → "41,321 unique comments"
-12. "32,865 false negatives (95% CI: 21,032–49,542)" → "6,690 false negatives (95% CI: 4,281–10,084)"
-13. "6,510 estimated true positives, this yields an estimated recall of 16.5%" → "1,747 estimated true positives, this yields an estimated recall of 20.7%"
-14. "6,510 estimated true positive health outcome reports (95% CI: 6,384–6,577)" → "1,747 (95% CI: 1,713–1,764)"
-15. **Table 4:** Recall CI "11.6% – 23.6%" → "14.8% – 29.0%"
-
-### Results — Prevalence
-
-16. "3.18% (6,671 / 209,661)" → "4.15% (1,790 / 43,111)"; adjusted prevalence "3.11%" → "4.05%"
-
-### Results — Channel Variation
-
-17. "χ² = 3,509" → "χ² = 927.51"
-18. "1.14% (Mark Hyman) to 8.06% (KenDBerryMD), yielding an odds ratio of 7.61" → "1.32% (Shawn Baker MD) to 10.40% (KenDBerryMD), yielding an odds ratio of 8.68"
-19. "Cramér's V = 0.129" → "Cramér's V = 0.147"
-
-### Figures
-
-20. **Figure 1:** Image regenerated — "Corpus (N=209,661)" → "(N=43,111)"; "Validated Corpus (n=6,671)" → "(n=1,790)"
-21. **Figure 2:** Caption "(n = 6,671)" → "(n = 1,790)"; image regenerated with corrected data
-21. **Figure 3:** Caption and image regenerated with corrected data
-22. **Figure 4:** Caption updated (rate 3.18%→4.15%, χ²=927.51, V=0.147); image regenerated
-23. **Figure 5:** Image regenerated with corrected data
-
-### Discussion
-
-24. "209,661 comments from 37,742 unique individuals ... 6,671" → "43,111 unique comments from 37,458 unique individuals ... 1,790"
-25. "3.18% positive outcome rate" → "4.15%"
-26. "7.61-fold difference ... KenDBerryMD, 8.06% ... Mark Hyman, 1.14%" → "8.68-fold ... 10.40% ... Shawn Baker MD, 1.32%"
-27. "χ² = 3,508.86" → "χ² = 927.51"
-28. "Mark Hyman (1.14%)" → "Mark Hyman (1.71%)" in channel discussion paragraph
-29. "6,510 estimated true positives" → "1,747"
-30. "16.5% recall (95% CI: 11.6%–23.6%) ... 83.5% of actual positive outcome reports" → "20.7% recall (95% CI: 14.8%–29.0%) ... 79.3%"
-31. Recall limitation paragraph: "16.5% ... 11.6%–23.6%" → "20.7% ... 14.8%–29.0%"
-32. "6,671 verifiable positive health outcome reports ... 37,742 unique individuals" → "1,790 ... 37,458"
-33. "3.18% prevalence" → "4.15% prevalence" in limitation section
-
-### Conclusions
-
-34. "209,661 comments" → "43,111 unique comments"
-35. "6,671 classified positive outcomes (6,510 estimated true positives) ... 37,742 unique commenters" → "1,790 ... (1,747) ... 37,458"
-36. "7.61-fold variation ... KenDBerryMD at 8.06% to Mark Hyman at 1.14%" → "8.68-fold ... 10.40% to Shawn Baker MD at 1.32%"
-37. "6,671 outcomes" → "1,790 outcomes"
-
-### ABSA Section
-
-38. "full corpus of 209,661" → "full corpus of 43,111 unique comments"
-39. **Table 9 — "Est. Full Corpus" column:** Corpus-level sentiment extrapolations rescaled from old N=209,661 to N=43,111 (×0.2056). Positive ~63,800→~13,100; Negative ~13,900→~2,900; Neutral ~18,200→~3,700; Mixed ~20,800→~4,300. Sample counts (n), percentages, and table note unchanged.
-
----
-
-## What Remains UNCHANGED
-
-- **Precision:** 97.6% (95% CI: 95.7%–98.6%) — validated on unique manually coded comments
-- **Ontology:** All 35 aspects across 3 Research Objectives
-- **Framework methodology:** Four-phase pipeline design
-- **Classification logic:** Rule-based classifier unchanged
-- **Table 1:** Comparative literature review (unchanged)
-- **Table 3:** Complete ontology (unchanged)
-- **Figure 1:** Framework architecture — image regenerated with corrected N=43,111 and n=1,790
-- **All qualitative findings** and interpretive analysis
-- **Ethical considerations** section
-- **References** section
-
-## Notable Correction: Recall Improvement
-
-The recall estimate improved from 16.5% to 20.7% after correction. This is because the original paper extrapolated the false negative rate (16.2%) to the inflated non-positive pool of 202,990 records, overestimating false negatives. With the corrected pool of 41,321 unique comments, the extrapolated false negatives decrease proportionally more than the true positives, yielding a higher (and more accurate) recall estimate.
-
----
-
-*This changelog was prepared as part of the Author Correction Request for JMIR ms#94855.*
+### Unchanged Elements
+- Classification precision (97.6%)
+- 35-aspect ontology framework
+- Rule-based methodology
+- All qualitative interpretation
