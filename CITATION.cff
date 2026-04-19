@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this framework, please cite the following paper."
-title: "Self-Reported Health Outcomes in Metabolic Health YouTube Comments: Rule-Based NLP Framework Development and Validation Study"
+title: "Self-Reported Health Outcomes in Metabolic Health YouTube Comments: Cross-Sectional Study of Rule-Based NLP Framework Development and Validation"
 authors:
   - family-names: "Ribeiro"
     given-names: "Ricardo"
@@ -20,7 +20,7 @@ keywords:
   - "YouTube"
   - "Health Outcomes"
   - "Rule-Based Classification"
-  - "Precision-Optimised Extraction"
+  - "Precision-Optimized Extraction"
   - "User-Generated Content"
   - "Metabolic Health"
   - "Ontology Engineering"

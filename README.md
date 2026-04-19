@@ -1,10 +1,10 @@
-# Self-Reported Health Outcomes in Metabolic Health YouTube Comments: Rule-Based NLP Framework Development and Validation Study
+# Self-Reported Health Outcomes in Metabolic Health YouTube Comments: Cross-Sectional Study of Rule-Based NLP Framework Development and Validation
 
-> **Status:** Revised manuscript resubmitted to *Journal of Medical Internet Research* (JMIR), Manuscript #94855
+> **Status:** Revised manuscript resubmitted to *Journal of Medical Internet Research* (JMIR), Manuscript #94855 — currently under editorial review (Round 2, submitted 19 April 2026)
 
 ## Overview
 
-This repository contains the code, ontology, validation protocols, and reproducibility artefacts for a precision-optimised computational framework that extracts self-reported positive health outcomes from YouTube comments on metabolic health channels.
+This repository contains the code, ontology, validation protocols, and reproducibility artifacts for a precision-optimized computational framework that extracts self-reported positive health outcomes from YouTube comments on metabolic health channels.
 
 From a corpus of **43,111 unique comments** across 11 Therapeutic Carbohydrate Restriction (TCR) channels (37,458 unique authors; November 2013 – January 2026), the framework classified **1,790 positive health outcome reports** spanning 35 health aspects and 18 named disease conditions.
 
@@ -23,15 +23,15 @@ From a corpus of **43,111 unique comments** across 11 Therapeutic Carbohydrate R
 ### Three-Stage Classification Pipeline
 1. **Health Content Detection** — keyword matching against a 35-aspect hierarchical ontology (520 keywords)
 2. **Outcome Indicator Detection** — 110 regex patterns across six categories (quantified change, symptom cessation, reversal/remission, medication discontinuation, explicit improvement, temporal improvement)
-3. **Exclusion Filtering** — 45 patterns minimising false positives (questions, negation, third-party, hypothetical, general statements, engagement-only)
+3. **Exclusion Filtering** — 45 patterns minimizing false positives (questions, negation, third-party, hypothetical, general statements, engagement-only)
 
 ### Ontology Structure
-Outcomes are organised under three Research Objectives:
+Outcomes are organized under three Research Objectives:
 - **RO1 – Subjective Well-Being** (9 aspects): cognitive function, energy, psychological well-being, sleep, appetite, pain, digestive health, skin health, hormonal health
-- **RO2 – Tool-Mediated Validation** (8 aspects): anthropometric changes, glycaemic control, blood pressure, lipid profile, inflammatory markers, liver function, kidney function, hormonal markers
+- **RO2 – Tool-Mediated Validation** (8 aspects): anthropometric changes, glycemic control, blood pressure, lipid profile, inflammatory markers, liver function, kidney function, hormonal markers
 - **RO3 – Disease Specificity** (18 aspects): type 2 diabetes, fatty liver, cardiovascular disease, hypertension, PCOS, neurodegenerative disease, CKD, gout, cancer, osteoporosis, stroke, ADHD, thyroid disease, IBD, autoimmune disease, fibromyalgia, arthritis, gallbladder disease
 
-### Validation Programme
+### Validation Program
 Five complementary validation studies:
 1. **Precision validation** — stratified random sample (n=500), manual coding on 5 dimensions
 2. **Recall estimation** — stratified negative sampling (n=510) across 3 comment-length strata and 11 channels
@@ -67,8 +67,8 @@ The raw YouTube comment corpus cannot be redistributed under the YouTube Data AP
 
 ```
 Ribeiro R, Zutshi A. Self-Reported Health Outcomes in Metabolic Health YouTube
-Comments: Rule-Based NLP Framework Development and Validation Study. J Med
-Internet Res. 2026 (under review). Manuscript #94855.
+Comments: Cross-Sectional Study of Rule-Based NLP Framework Development and
+Validation. J Med Internet Res. 2026 (under review). Manuscript #94855.
 ```
 
 ## License
